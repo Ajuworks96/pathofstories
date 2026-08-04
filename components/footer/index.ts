@@ -1,0 +1,27 @@
+export { Footer } from "./Footer";
+export { FooterContainer } from "./FooterContainer";
+export { FooterColumns } from "./FooterColumns";
+export { FooterColumn } from "./FooterColumn";
+export { FooterLogo } from "./FooterLogo";
+export { FooterNavigation } from "./FooterNavigation";
+export { FooterContact } from "./FooterContact";
+export { FooterSocial } from "./FooterSocial";
+export { FooterNewsletter } from "./FooterNewsletter";
+export { FooterBottom } from "./FooterBottom";
+export { FooterCopyright } from "./FooterCopyright";
+export { FooterLegal } from "./FooterLegal";
+export { FooterDivider } from "./FooterDivider";
+
+export type { FooterProps } from "./Footer";
+export type { FooterContainerProps } from "./FooterContainer";
+export type { FooterColumnsProps } from "./FooterColumns";
+export type { FooterColumnProps } from "./FooterColumn";
+export type { FooterLogoProps } from "./FooterLogo";
+export type { FooterNavigationProps, FooterNavigationLink } from "./FooterNavigation";
+export type { FooterContactProps } from "./FooterContact";
+export type { FooterSocialProps, FooterSocialItem } from "./FooterSocial";
+export type { FooterNewsletterProps } from "./FooterNewsletter";
+export type { FooterBottomProps } from "./FooterBottom";
+export type { FooterCopyrightProps } from "./FooterCopyright";
+export type { FooterLegalProps, FooterLegalLink } from "./FooterLegal";
+export type { FooterDividerProps } from "./FooterDivider";
