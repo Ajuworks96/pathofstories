@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 interface BrandLogoProps {
@@ -10,33 +9,43 @@ interface BrandLogoProps {
 }
 
 export function BrandLogo({ size = "md", showText = true }: BrandLogoProps) {
-  const sizeClasses = {
-    sm: "w-9 h-9",
+  const iconSizes = {
+    sm: "w-8 h-8",
     md: "w-11 h-11",
-    lg: "w-16 h-16",
+    lg: "w-14 h-14",
   };
 
   return (
-    <Link href="/" className="flex items-center gap-3.5 group">
-      {/* Premium Circular Emblem Logo Badge with Gold Ring */}
-      <div className={`relative ${sizeClasses[size]} rounded-full p-0.5 bg-gradient-to-tr from-[#2F5D50] via-[#E8DCC8] to-[#6B8A6E] shadow-xl group-hover:scale-105 transition-transform duration-300 flex-shrink-0`}>
-        <div className="w-full h-full rounded-full overflow-hidden relative bg-[#0E1F1A]">
-          <Image
-            src="/images/logo_badge.png"
-            alt="Path of Stories Official Emblem"
-            fill
-            priority
-            className="object-cover"
-          />
-        </div>
+    <Link href="/" className="flex items-center gap-3 group focus:outline-none">
+      {/* Mountain Line-Art Sketch SVG Logo matching Mockup */}
+      <div className={`relative ${iconSizes[size]} flex items-center justify-center flex-shrink-0 text-[#213327]`}>
+        <svg
+          viewBox="0 0 100 80"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="w-full h-full transform group-hover:scale-105 transition-transform duration-300"
+        >
+          {/* Main mountain ridge */}
+          <path d="M8 58 L36 14 L56 46 L76 24 L92 58" />
+          {/* Inner ridge lines */}
+          <path d="M36 14 L24 38" />
+          <path d="M76 24 L64 42" />
+          {/* Winding trail path */}
+          <path d="M38 48 C44 58, 18 62, 42 74" />
+          {/* Pine tree detail */}
+          <path d="M78 40 L84 46 L77 46 L83 52 L75 52 L81 58 L78 58 L78 63" />
+        </svg>
       </div>
 
       {showText && (
-        <div className="flex flex-col">
-          <span className="text-base sm:text-lg font-extrabold tracking-widest text-[#FAF7F1] uppercase font-serif leading-none group-hover:text-[#E8DCC8] transition-colors">
+        <div className="flex flex-col justify-center">
+          <span className="text-base sm:text-lg font-bold font-serif tracking-wider text-[#213327] uppercase leading-none group-hover:text-[#AD6B4D] transition-colors">
             PATH OF STORIES
           </span>
-          <span className="text-[10px] sm:text-[11px] italic font-serif text-[#E8DCC8] tracking-wider mt-0.5">
+          <span className="text-[10px] sm:text-[11px] font-sans text-[#78857A] tracking-normal mt-1">
             Every Journey Tells a Story
           </span>
         </div>
@@ -44,3 +53,4 @@ export function BrandLogo({ size = "md", showText = true }: BrandLogoProps) {
     </Link>
   );
 }
+

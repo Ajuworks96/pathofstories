@@ -1,6 +1,5 @@
 import React from "react";
-import Metadata from "next";
-import { Sparkles, Star, Quote, Heart, Users } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 
 export const metadata = {
   title: "Testimonials & Stories | Path of Stories",
@@ -60,64 +59,66 @@ export default function TestimonialsPage() {
   ];
 
   return (
-    <div className="pt-28 pb-20 text-[#FAF7F1] relative z-10 space-y-16">
+    <div className="pt-28 pb-20 text-[#213327] bg-[#F6F5F0] relative z-10 space-y-16">
       
       {/* Page Header */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#162E27]/90 border border-[#2F5D50] text-[#E8DCC8] text-xs font-semibold tracking-widest uppercase shadow-xl">
-          <Sparkles className="w-3.5 h-3.5 text-[#E8DCC8]" />
-          <span>REAL TRAVELER REVIEWS</span>
-        </div>
+      <div className="max-w-4xl mx-auto px-4 text-center space-y-4">
+        <span className="text-xs font-semibold tracking-widest text-[#78857A] uppercase block">
+          REAL TRAVELER REVIEWS
+        </span>
 
-        <h1 className="text-4xl sm:text-6xl font-extrabold font-sans tracking-tight">
-          Traveler <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#E8DCC8] via-[#FAF7F1] to-[#6B8A6E]">Testimonials &amp; Stories</span>
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-semibold text-[#213327] tracking-tight">
+          Traveler <span className="text-[#AD6B4D] italic font-normal">Testimonials &amp; Stories</span>
         </h1>
 
-        <p className="text-[#E8DCC8]/90 text-sm sm:text-base font-light max-w-2xl mx-auto leading-relaxed">
+        {/* Centered Accent Underline */}
+        <div className="w-12 h-[2px] bg-[#78857A] mx-auto mt-2" />
+
+        <p className="text-[#4A554D] text-sm sm:text-base font-light max-w-2xl mx-auto leading-relaxed pt-2">
           Over 2,000+ conscious travelers have journeyed with us across Kerala and India. Here is what they have to say about their experience.
         </p>
 
         {/* Rating Summary Bar */}
-        <div className="flex items-center justify-center gap-2 pt-2 text-[#E8DCC8]">
-          <div className="flex text-amber-400 gap-1">
+        <div className="flex items-center justify-center gap-2 pt-2 text-[#78857A]">
+          <div className="flex text-[#AD6B4D] gap-1">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-5 h-5 fill-current" />
             ))}
           </div>
-          <span className="font-bold text-[#FAF7F1] text-lg">4.9 / 5.0</span>
-          <span className="text-xs text-[#E8DCC8]/70">(From 2,000+ Verified Reviews)</span>
+          <span className="font-bold text-[#213327] text-lg">4.9 / 5.0</span>
+          <span className="text-xs text-[#78857A]">(From 2,000+ Verified Reviews)</span>
         </div>
       </div>
 
       {/* Testimonials Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="bg-[#162E27]/90 backdrop-blur-xl border border-[#2F5D50] hover:border-[#E8DCC8]/40 rounded-3xl p-8 shadow-2xl space-y-6 flex flex-col justify-between"
+              className="bg-[#EFECE6] border border-[#E2DEC5] rounded-3xl p-8 shadow-xs space-y-6 flex flex-col justify-between"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <div className="flex text-amber-400 gap-0.5">
+                  <div className="flex text-[#AD6B4D] gap-0.5">
                     {[...Array(item.rating)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-current" />
                     ))}
                   </div>
-                  <Quote className="w-6 h-6 text-[#E8DCC8]/30" />
+                  <Quote className="w-6 h-6 text-[#78857A]/40" />
                 </div>
 
-                <p className="text-xs sm:text-sm italic font-serif text-[#FAF7F1] leading-relaxed">
+                <p className="text-xs sm:text-sm italic font-serif text-[#213327] leading-relaxed">
                   &ldquo;{item.review}&rdquo;
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-[#2F5D50]/40 flex items-center justify-between text-xs">
+              <div className="pt-4 border-t border-[#D9D4C7] flex items-center justify-between text-xs">
                 <div>
-                  <h4 className="font-bold text-[#FAF7F1] font-sans">{item.name}</h4>
-                  <span className="text-[10px] text-[#E8DCC8]/70">{item.location}</span>
+                  <h4 className="font-bold text-[#213327] font-sans">{item.name}</h4>
+                  <span className="text-[10px] text-[#78857A]">{item.location}</span>
                 </div>
-                <span className="text-[10px] text-[#E8DCC8]/50 font-mono">{item.date}</span>
+                <span className="text-[10px] text-[#78857A] font-mono">{item.date}</span>
               </div>
             </div>
           ))}

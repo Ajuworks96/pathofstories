@@ -9,7 +9,7 @@ export function ContactSection() {
     name: "",
     email: "",
     phone: "",
-    destination: "Western Ghats",
+    destination: "Kudremukh Trek",
     message: "",
   });
 
@@ -19,163 +19,182 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-transparent text-[#FAF7F1] relative overflow-hidden border-t border-[#2F5D50]/40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
-          {/* Left Column: Headline & Official Contact Info */}
-          <div className="lg:col-span-6 space-y-6 pt-4">
-            <h2 className="text-4xl sm:text-6xl font-extrabold tracking-tight font-serif leading-tight">
-              Ready <span className="font-serif italic font-normal text-[#E8DCC8]">To Tell Your</span> <br />
-              Next Story?
-            </h2>
+    <section id="contact" className="py-20 sm:py-28 bg-[#F6F5F0] text-[#213327] relative border-t border-[#E8E4D8]">
+      <div className="max-w-6xl mx-auto px-4">
+        {/* Section Header */}
+        <div className="text-center mb-14">
+          <span className="text-xs font-semibold tracking-widest text-[#78857A] uppercase block mb-2">
+            CONTACT US
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-[#213327] tracking-tight">
+            Ready to Start Your Journey?
+          </h2>
+          {/* Centered Olive Accent Underline */}
+          <div className="w-12 h-[2px] bg-[#78857A] mx-auto mt-3" />
+        </div>
 
-            <p className="text-[#E8DCC8]/80 text-sm sm:text-base font-light leading-relaxed max-w-lg">
-              Whether you&apos;re planning your next escape, looking for custom group itineraries, or want to connect with founders Jeena &amp; Amal, we&apos;re here for you. Reach out and start your journey.
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+          
+          {/* Left Column: Contact Details & Info */}
+          <div className="lg:col-span-5 space-y-6 bg-[#EFECE6] border border-[#E2DEC5] p-8 rounded-3xl shadow-xs">
+            <h3 className="text-2xl font-serif font-semibold text-[#213327]">
+              Get in Touch
+            </h3>
+            <p className="text-xs sm:text-sm text-[#4A554D] leading-relaxed font-light">
+              Have questions about upcoming treks, safety, or custom itineraries? Connect with Jeena &amp; Amal and we&apos;ll help you plan your next memory.
             </p>
 
-            <div className="space-y-4 pt-4 border-t border-[#2F5D50]/40">
-              <div className="flex items-center gap-4 group">
-                <div className="w-12 h-12 rounded-2xl bg-[#162E27] border border-[#2F5D50] flex items-center justify-center text-[#E8DCC8] group-hover:border-[#E8DCC8] transition-colors">
+            <div className="space-y-4 pt-4 border-t border-[#D9D4C7]">
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-xl bg-[#213327] text-[#FAF8F5] flex items-center justify-center flex-shrink-0">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-[10px] uppercase font-bold tracking-widest text-[#E8DCC8]/60 block">Email Us</span>
-                  <a href="mailto:expeditions@pathofstories.com" className="text-sm font-semibold text-[#FAF7F1] hover:text-[#E8DCC8] transition-colors">
-                    expeditions@pathofstories.com
+                  <span className="text-[10px] uppercase font-bold tracking-wider text-[#78857A] block">Email Us</span>
+                  <a href="mailto:pathofstoriess@gmail.com" className="text-xs sm:text-sm font-medium text-[#213327] hover:text-[#AD6B4D] transition-colors">
+                    pathofstoriess@gmail.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 group">
-                <div className="w-12 h-12 rounded-2xl bg-[#162E27] border border-[#2F5D50] flex items-center justify-center text-[#E8DCC8] group-hover:border-[#E8DCC8] transition-colors">
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-xl bg-[#213327] text-[#FAF8F5] flex items-center justify-center flex-shrink-0">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-[10px] uppercase font-bold tracking-widest text-[#E8DCC8]/60 block">Call / WhatsApp</span>
-                  <a href="tel:+919847012345" className="text-sm font-semibold text-[#FAF7F1] hover:text-[#E8DCC8] transition-colors">
-                    +91 98470 12345
+                  <span className="text-[10px] uppercase font-bold tracking-wider text-[#78857A] block">Call / WhatsApp</span>
+                  <a href="tel:+916282603784" className="text-xs sm:text-sm font-medium text-[#213327] hover:text-[#AD6B4D] transition-colors">
+                    +91 62826 03784
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 group">
-                <div className="w-12 h-12 rounded-2xl bg-[#162E27] border border-[#2F5D50] flex items-center justify-center text-[#E8DCC8] group-hover:border-[#E8DCC8] transition-colors">
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-xl bg-[#213327] text-[#FAF8F5] flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-[10px] uppercase font-bold tracking-widest text-[#E8DCC8]/60 block">Founders &amp; Base</span>
-                  <span className="text-sm font-semibold text-[#FAF7F1]">
-                    Amal Ashokan &amp; Jeena KP &bull; Kerala, India
+                  <span className="text-[10px] uppercase font-bold tracking-wider text-[#78857A] block">Founders &amp; Base</span>
+                  <span className="text-xs sm:text-sm font-medium text-[#213327]">
+                    Jeena KP &amp; Amal Ashokan &bull; Kerala, India
                   </span>
                 </div>
               </div>
             </div>
+
+            {/* Quick WhatsApp Direct Button */}
+            <div className="pt-2">
+              <a
+                href="https://wa.me/916282603784"
+                target="_blank"
+                rel="noreferrer"
+                className="w-full bg-[#213327] hover:bg-[#2C4233] text-[#FAF8F5] font-medium py-3 rounded-full text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md"
+              >
+                <span>Chat on WhatsApp</span>
+              </a>
+            </div>
           </div>
 
-          {/* Right Column: Contact Form */}
-          <div className="lg:col-span-6">
-            <div className="bg-[#162E27]/90 backdrop-blur-xl border border-[#2F5D50] rounded-3xl p-8 sm:p-10 shadow-2xl space-y-6">
-              <h3 className="text-xl font-bold font-serif text-[#FAF7F1]">
-                Start A Conversation
-              </h3>
+          {/* Right Column: Contact Inquiry Form */}
+          <div className="lg:col-span-7 bg-[#EFECE6] border border-[#E2DEC5] p-8 sm:p-10 rounded-3xl shadow-xs">
+            <h3 className="text-2xl font-serif font-semibold text-[#213327] mb-6">
+              Send an Inquiry
+            </h3>
 
-              {submitted ? (
-                <div className="bg-[#2F5D50]/40 border border-[#E8DCC8]/50 rounded-2xl p-8 text-center space-y-3">
-                  <div className="w-14 h-14 rounded-full bg-[#2F5D50] text-[#FAF7F1] flex items-center justify-center mx-auto shadow-xl">
-                    <CheckCircle2 className="w-8 h-8" />
-                  </div>
-                  <h4 className="text-xl font-bold text-[#FAF7F1]">Message Received!</h4>
-                  <p className="text-xs text-[#E8DCC8]">
-                    Thank you for reaching out. Amal or Jeena will connect with you on WhatsApp/Phone shortly.
-                  </p>
+            {submitted ? (
+              <div className="bg-[#213327] text-[#FAF8F5] rounded-2xl p-8 text-center space-y-2 shadow-md">
+                <div className="w-12 h-12 rounded-full bg-[#AD6B4D] text-white flex items-center justify-center mx-auto shadow-lg">
+                  <CheckCircle2 className="w-6 h-6" />
                 </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="text-[11px] font-semibold uppercase tracking-wider text-[#E8DCC8]/70 block mb-1.5">
-                        Your Name
-                      </label>
-                      <input
-                        type="text"
-                        required
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="John Doe"
-                        className="w-full bg-[#0E1F1A]/80 border border-[#2F5D50] rounded-xl px-4 py-3 text-xs text-[#FAF7F1] focus:outline-none focus:border-[#E8DCC8]"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="text-[11px] font-semibold uppercase tracking-wider text-[#E8DCC8]/70 block mb-1.5">
-                        Phone / WhatsApp
-                      </label>
-                      <input
-                        type="tel"
-                        required
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="+91 98765 43210"
-                        className="w-full bg-[#0E1F1A]/80 border border-[#2F5D50] rounded-xl px-4 py-3 text-xs text-[#FAF7F1] focus:outline-none focus:border-[#E8DCC8]"
-                      />
-                    </div>
-                  </div>
-
+                <h4 className="text-xl font-serif font-semibold">Inquiry Received!</h4>
+                <p className="text-xs text-[#C5CEC8]">
+                  Thank you for reaching out. Amal or Jeena will connect with you via WhatsApp/Phone shortly.
+                </p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="text-[11px] font-semibold uppercase tracking-wider text-[#E8DCC8]/70 block mb-1.5">
-                      Email Address
+                    <label className="text-xs font-medium text-[#213327] block mb-1">
+                      Your Name
                     </label>
                     <input
-                      type="email"
+                      type="text"
                       required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="john@example.com"
-                      className="w-full bg-[#0E1F1A]/80 border border-[#2F5D50] rounded-xl px-4 py-3 text-xs text-[#FAF7F1] focus:outline-none focus:border-[#E8DCC8]"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      placeholder="John Doe"
+                      className="w-full bg-[#FAF8F5] border border-[#DCD7CD] rounded-xl px-4 py-3 text-xs text-[#213327] focus:outline-none focus:border-[#213327]"
                     />
                   </div>
 
                   <div>
-                    <label className="text-[11px] font-semibold uppercase tracking-wider text-[#E8DCC8]/70 block mb-1.5">
-                      Preferred Expedition
+                    <label className="text-xs font-medium text-[#213327] block mb-1">
+                      Phone / WhatsApp
                     </label>
-                    <select
-                      value={formData.destination}
-                      onChange={(e) => setFormData({ ...formData, destination: e.target.value })}
-                      className="w-full bg-[#0E1F1A]/80 border border-[#2F5D50] rounded-xl px-4 py-3 text-xs text-[#FAF7F1] focus:outline-none focus:border-[#E8DCC8]"
-                    >
-                      <option value="Western Ghats">Western Ghats Monsoon Trail</option>
-                      <option value="Meghalaya">Living Root Bridges & Cherrapunji</option>
-                      <option value="Spiti Valley">Spiti Monastery Expedition</option>
-                      <option value="Himalayan Ridge">Nepal Himalayan Ridge</option>
-                      <option value="Kerala Trails">Kerala Tea Highlands</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="text-[11px] font-semibold uppercase tracking-wider text-[#E8DCC8]/70 block mb-1.5">
-                      Your Story or Query
-                    </label>
-                    <textarea
-                      rows={4}
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Tell us what kind of journey you are seeking..."
-                      className="w-full bg-[#0E1F1A]/80 border border-[#2F5D50] rounded-xl px-4 py-3 text-xs text-[#FAF7F1] focus:outline-none focus:border-[#E8DCC8]"
+                    <input
+                      type="tel"
+                      required
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      placeholder="+91 62826 03784"
+                      className="w-full bg-[#FAF8F5] border border-[#DCD7CD] rounded-xl px-4 py-3 text-xs text-[#213327] focus:outline-none focus:border-[#213327]"
                     />
                   </div>
+                </div>
 
-                  <button
-                    type="submit"
-                    className="w-full bg-[#2F5D50] hover:bg-[#6B8A6E] text-[#FAF7F1] font-bold py-3.5 rounded-xl uppercase tracking-wider text-xs shadow-xl transition flex items-center justify-center gap-2 border border-[#E8DCC8]/30"
+                <div>
+                  <label className="text-xs font-medium text-[#213327] block mb-1">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    required
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    placeholder="john@example.com"
+                    className="w-full bg-[#FAF8F5] border border-[#DCD7CD] rounded-xl px-4 py-3 text-xs text-[#213327] focus:outline-none focus:border-[#213327]"
+                  />
+                </div>
+
+                <div>
+                  <label className="text-xs font-medium text-[#213327] block mb-1">
+                    Select Experience / Trip
+                  </label>
+                  <select
+                    value={formData.destination}
+                    onChange={(e) => setFormData({ ...formData, destination: e.target.value })}
+                    className="w-full bg-[#FAF8F5] border border-[#DCD7CD] rounded-xl px-4 py-3 text-xs text-[#213327] focus:outline-none focus:border-[#213327]"
                   >
-                    <span>Send Message</span>
-                    <Send className="w-4 h-4" />
-                  </button>
-                </form>
-              )}
-            </div>
+                    <option value="Kudremukh Trek">Kudremukh Trek (3 Days)</option>
+                    <option value="Wayanad Escape">Wayanad Escape (2 Days)</option>
+                    <option value="Varkala Getaway">Varkala Getaway (2 Days)</option>
+                    <option value="Custom Group">Custom Group / Corporate Retreat</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="text-xs font-medium text-[#213327] block mb-1">
+                    Your Message
+                  </label>
+                  <textarea
+                    rows={4}
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    placeholder="Tell us about your travel dates or group preferences..."
+                    className="w-full bg-[#FAF8F5] border border-[#DCD7CD] rounded-xl px-4 py-3 text-xs text-[#213327] focus:outline-none focus:border-[#213327]"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-[#213327] hover:bg-[#2C4233] text-[#FAF8F5] font-semibold py-3.5 rounded-full uppercase tracking-wider text-xs shadow-md transition flex items-center justify-center gap-2"
+                >
+                  <span>Submit Inquiry</span>
+                  <Send className="w-4 h-4" />
+                </button>
+              </form>
+            )}
           </div>
 
         </div>

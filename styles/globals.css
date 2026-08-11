@@ -1,53 +1,32 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand Guidelines Official Palette */
-  --color-forest: #2F5D50;
-  --color-sand: #E8DCC8;
-  --color-moss: #6B8A6E;
-  --color-charcoal: #333333;
-  --color-offwhite: #FAF7F1;
+  /* Brand Guidelines Palette matching Image Mockup */
+  --color-forest: #213327;
+  --color-forest-dark: #17241C;
+  --color-sand: #EFECE6;
+  --color-cream: #F6F5F0;
+  --color-cream-light: #FAF9F5;
+  --color-copper: #AD6B4D;
+  --color-olive: #78857A;
+  --color-charcoal: #2B332E;
 
-  --color-brand-forest: #2F5D50;
-  --color-brand-sand: #E8DCC8;
-  --color-brand-moss: #6B8A6E;
-  --color-brand-charcoal: #333333;
-  --color-brand-offwhite: #FAF7F1;
+  --color-background: #F6F5F0;
+  --color-surface: #EFECE6;
+  --color-border: #DCD7CD;
 
-  --color-primary-50: #FAF7F1;
-  --color-primary-100: #F3ECE0;
-  --color-primary-200: #E8DCC8;
-  --color-primary-300: #C2B29A;
-  --color-primary-400: #8C9F8E;
-  --color-primary-500: #6B8A6E;
-  --color-primary-600: #4B6E5B;
-  --color-primary-700: #2F5D50;
-  --color-primary-800: #214339;
-  --color-primary-900: #162E27;
-  --color-primary-950: #0E1F1A;
-
-  --color-background: #0E1F1A;
-  --color-surface: #162E27;
-  --color-border: #2F5D50;
-
-  --color-text-primary: #FAF7F1;
-  --color-text-secondary: #E8DCC8;
+  --color-text-primary: #213327;
+  --color-text-secondary: #556358;
 }
 
 :root {
   --font-serif: var(--font-playfair-display), Playfair Display, Georgia, serif;
-  --font-sans: var(--font-poppins), Poppins, system-ui, sans-serif;
-
-  --color-forest: #2F5D50;
-  --color-sand: #E8DCC8;
-  --color-moss: #6B8A6E;
-  --color-charcoal: #333333;
-  --color-offwhite: #FAF7F1;
+  --font-sans: var(--font-sans), Plus Jakarta Sans, Inter, system-ui, sans-serif;
 }
 
 body {
-  background-color: #0E1F1A;
-  color: #FAF7F1;
+  background-color: #F6F5F0;
+  color: #213327;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -58,3 +37,4 @@ body {
   overflow-wrap: normal;
   word-break: normal;
 }
+
