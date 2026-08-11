@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/sections/hero/HeroSection";
 import { FeaturePillarsBar } from "@/components/sections/features/FeaturePillarsBar";
 import { UpcomingTripsSection } from "@/components/sections/hero/UpcomingTripsSection";
 import { OurServicesSection } from "@/components/sections/services/OurServicesSection";
+import { MissionVisionSection } from "@/components/sections/mission/MissionVisionSection";
 import { AboutSection } from "@/components/sections/about/AboutSection";
 import { TestimonialsSection } from "@/components/sections/testimonials/TestimonialsSection";
 import { ContactSection } from "@/components/sections/contact/ContactSection";
@@ -21,16 +22,19 @@ export default function HomePage() {
       {/* 3. Featured Trips Section */}
       <UpcomingTripsSection />
 
-      {/* 4. Our Services Section */}
+      {/* 4. Our Services & Destinations Section (Assam, Meghalaya, Tawang, Nagaland, Arunachal Pradesh, Anini, Mechuka, Lakshadweep) */}
       <OurServicesSection />
 
-      {/* 5. "We Believe" About Section */}
+      {/* 5. Mission & Vision Section */}
+      <MissionVisionSection />
+
+      {/* 6. "We Believe" About Section */}
       <AboutSection />
 
-      {/* 6. Testimonials & Community Stories Section */}
+      {/* 7. Testimonials & Community Stories Section */}
       <TestimonialsSection />
 
-      {/* 7. Contact Us Section */}
+      {/* 8. Contact Us Section */}
       <ContactSection />
     </div>
   );
