@@ -1,88 +1,94 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, ArrowRight, Compass, Shield, Sparkles } from "lucide-react";
+import { MapPin, ArrowRight, MessageCircle, Sparkles } from "lucide-react";
 
 export const metadata = {
   title: "Services & Expeditions | Path of Stories",
-  description: "Explore curated small-group services & expeditions across Assam, Meghalaya, Tawang, Nagaland, Arunachal Pradesh, Anini, Mechuka, and Lakshadweep.",
+  description: "Explore curated small-group expeditions across Arunachal Pradesh, Anini, Mechuka, Ziro, Assam, Nagaland, and Meghalaya with Path of Stories.",
 };
 
 export default function ServicesPage() {
   const expeditions = [
     {
+      id: "arunachal_pradesh",
+      title: "Land of Monasteries and Waterfalls - Arunachal Pradesh",
+      location: "Arunachal Pradesh",
+      duration: "8 Days / 7 Nights",
+      image: "/images/service_arunachal_pradesh.jpg",
+      description: "Journey across soaring Himalayan passes, ancient sacred Gompas, dramatic waterfalls, and historic border frontiers.",
+      highlights: [
+        "Bhutan border",
+        "Dirang monastery",
+        "History of China War",
+        "Bumla pass",
+        "Tawang monastery",
+        "Jang falls",
+      ],
+    },
+    {
+      id: "anini_mechuka_ziro",
+      title: "Anini, Mechuka & Ziro Valley",
+      location: "Dong Valley & Shi-Yomi District",
+      duration: "7 Days / 6 Nights",
+      image: "/images/service_anini.jpg",
+      description: "Trek pristine frontier alpine valleys, experience ancient Apatani tribal heritage in Ziro, and witness India's first sunrise in Dong Valley.",
+      highlights: [
+        "Anini Valley",
+        "Mechuka Valley",
+        "Ziro (Land of Apatani Tribe)",
+        "Dong Valley (First Sunrise in India)",
+      ],
+    },
+    {
       id: "assam",
-      title: "Assam Wilderness & Heritage Trail",
+      title: "One Horned Rhinos and Assam",
       location: "Assam, Northeast India",
       duration: "5 Days / 4 Nights",
       image: "/images/service_assam.jpg",
-      description: "Explore the world's largest river island of Majuli, lush rolling tea estates, Kaziranga rhino safaris, and Brahmaputra sunset cruises.",
-      highlights: ["Kaziranga Wildlife", "Majuli Island Culture", "Brahmaputra Sunset Cruise", "Heritage Tea Estates"],
-    },
-    {
-      id: "meghalaya",
-      title: "Meghalaya Cloud & Waterfalls Trail",
-      location: "Cherrapunji & Dawki, Meghalaya",
-      duration: "6 Days / 5 Nights",
-      image: "/images/service_meghalaya.jpg",
-      description: "Hike through double-decker living root bridges, turquoise natural pools, and fog-draped rainiest valleys on earth.",
-      highlights: ["Double-Decker Root Bridges", "Dawki River Boating", "Nohkalikai Waterfalls", "Khasi Village Stays"],
-    },
-    {
-      id: "tawang",
-      title: "Tawang Monastery & Alpine Expedition",
-      location: "Tawang, Arunachal Pradesh",
-      duration: "7 Days / 6 Nights",
-      image: "/images/service_tawang.jpg",
-      description: "High-altitude monastery sanctuary, morning chants at 400-year-old Tawang Gompa, Sela Pass snow peaks, and Madhuri lake.",
-      highlights: ["Tawang Monastery Chants", "Sela Pass & Lake", "Madhuri Lake Hike", "Monpa Tribal Culture"],
+      description: "Explore Kaziranga National Park sanctuary of one-horned rhinoceroses, tea plantations, and scenic cruises along the mighty Brahmaputra.",
+      highlights: [
+        "Kaziranga Wild life",
+        "The mighty Brahmaputra",
+        "Majuli Island Culture",
+        "Heritage Tea Estates",
+      ],
     },
     {
       id: "nagaland",
-      title: "Nagaland Dzukou Valley & Tribal Trail",
-      location: "Dzukou Valley & Kohima, Nagaland",
+      title: "Hornbill Festival and Nagaland",
+      location: "Nagaland, Northeast India",
       duration: "6 Days / 5 Nights",
       image: "/images/service_nagaland.jpg",
-      description: "Trek through the rolling green carpets of Dzukou Valley, experience authentic Naga village hospitality, and explore vibrant traditions.",
-      highlights: ["Dzukou Valley Trek", "Kisama Heritage Village", "Kohima Cultural Stays", "Local Naga Culinary Trails"],
+      description: "Trek through the emerald waves of Dzoku Valley, immerse in the world-famous Hornbill Festival, and visit historic Longwa tribal hamlets.",
+      highlights: [
+        "Dzoku valley trek",
+        "Hornbill Festival",
+        "Longwa (Land of head hunters)",
+      ],
     },
     {
-      id: "arunachal_pradesh",
-      title: "Arunachal Frontier & Dawn Peaks",
-      location: "Arunachal Pradesh, Northeast India",
-      duration: "8 Days / 7 Nights",
-      image: "/images/service_arunachal_pradesh.jpg",
-      description: "Traverse snow-fed rivers, misty pine forests, remote tribal hamlets, and dawn-lit mountain passes along India's northeastern frontier.",
-      highlights: ["Sangti Valley Stays", "Dirang River Rafting", "High-Altitude Passes", "Authentic Homestays"],
-    },
-    {
-      id: "anini",
-      title: "Anini Dibang Valley Frontier Trek",
-      location: "Anini, Dibang Valley",
-      duration: "7 Days / 6 Nights",
-      image: "/images/service_anini.jpg",
-      description: "Journey to Dibang Valley's misty mountains, experience Idu Mishmi tribal culture, emerald rivers, and raw, undisturbed nature.",
-      highlights: ["Dibang Valley Exploration", "Idu Mishmi Culture", "Prismatic Alpine Rivers", "Unexplored Trail Treks"],
-    },
-    {
-      id: "mechuka",
-      title: "Mechuka Valley Shangri-La Trail",
-      location: "Mechuka, Shi-Yomi District",
-      duration: "7 Days / 6 Nights",
-      image: "/images/service_mechuka.jpg",
-      description: "Discover the hidden paradise near Tibetan border with wooden bridges over Yargyap Chu river, ancient monasteries, and pine meadows.",
-      highlights: ["Yargyap Chu River Walks", "400-Yr Samten Yongcha Gompa", "Pine Forest Camping", "Border Valley Culture"],
-    },
-    {
-      id: "lakshadweep",
-      title: "Lakshadweep Turquoise Lagoon Getaway",
-      location: "Lakshadweep Islands",
-      duration: "5 Days / 4 Nights",
-      image: "/images/service_lakshadweep.jpg",
-      description: "Unwind on secluded island beaches, kayak through translucent turquoise lagoons, and snorkel vibrant coral reef sanctuaries.",
-      highlights: ["Coral Reef Snorkeling", "Turquoise Lagoon Kayaking", "White Sand Beach Camps", "Island Coconut Stays"],
+      id: "meghalaya",
+      title: "Meghalaya - Land of Water Activities",
+      location: "Cherrapunji, Jaintia & Khasi Hills",
+      duration: "6 Days / 5 Nights",
+      image: "/images/service_meghalaya.jpg",
+      description: "Explore mist-laden Cherrapunji, serene Jaintia & Khasi hills, glass-like Dawki river, and the natural water canyon of Wari Chora.",
+      highlights: [
+        "Cherrapunji",
+        "Jaintia Hills",
+        "Khasi hills",
+        "Dawki river",
+        "Wari Chora",
+        "Land of water activities",
+      ],
     },
   ];
+
+  const getWhatsAppUrl = (title: string) => {
+    const text = `Hi Path of Stories, I'm interested in inquiring about "${title}"! Please share the detailed itinerary and available dates.`;
+    return `https://wa.me/916282603784?text=${encodeURIComponent(text)}`;
+  };
 
   return (
     <div className="pt-28 pb-20 text-[#213327] bg-[#F6F5F0] relative z-10 space-y-16">
@@ -101,11 +107,11 @@ export default function ServicesPage() {
         <div className="w-12 h-[2px] bg-[#78857A] mx-auto mt-2" />
 
         <p className="text-[#4A554D] text-sm sm:text-base font-light max-w-2xl mx-auto leading-relaxed pt-2">
-          From Assam tea gardens to the untouched alpine valleys of Anini, Mechuka, and the turquoise lagoons of Lakshadweep. Every service is thoughtfully planned with safety, transparent pricing, and authenticity.
+          From the monasteries of Tawang to the Hornbill festival in Nagaland, one-horned rhinos in Assam, and the water canyons of Meghalaya. Connect directly on WhatsApp to reserve your seat or customize your trip.
         </p>
       </div>
 
-      {/* Expeditions List (8 Services) */}
+      {/* Expeditions List */}
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {expeditions.map((item) => (
@@ -148,9 +154,9 @@ export default function ServicesPage() {
                   </p>
 
                   <div className="pt-2">
-                    <span className="text-[11px] font-semibold uppercase tracking-wider text-[#78857A] block mb-2 flex items-center gap-1">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#78857A] block mb-2 flex items-center gap-1">
                       <Sparkles className="w-3 h-3 text-[#AD6B4D]" />
-                      SERVICE HIGHLIGHTS:
+                      EXPED HIGHLIGHTS:
                     </span>
                     <div className="flex flex-wrap gap-2">
                       {item.highlights.map((h, i) => (
@@ -166,12 +172,22 @@ export default function ServicesPage() {
                 </div>
               </div>
 
-              <div className="p-6 sm:p-8 pt-0">
+              <div className="p-6 sm:p-8 pt-0 flex flex-col sm:flex-row gap-3">
+                <a
+                  href={getWhatsAppUrl(item.title)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex-1 bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl shadow-md transition flex items-center justify-center gap-2"
+                >
+                  <MessageCircle className="w-4 h-4 fill-current" />
+                  <span>INQUIRE ON WHATSAPP</span>
+                </a>
+
                 <Link
                   href="/contact"
-                  className="w-full bg-[#213327] hover:bg-[#2C4233] text-[#FAF8F5] text-xs font-semibold uppercase tracking-wider py-3.5 rounded-xl shadow-md transition flex items-center justify-center gap-2"
+                  className="bg-[#213327] hover:bg-[#2C4233] text-[#FAF8F5] text-xs font-semibold uppercase tracking-wider px-6 py-3.5 rounded-xl shadow-md transition flex items-center justify-center gap-2"
                 >
-                  <span>INQUIRE ABOUT THIS SERVICE</span>
+                  <span>FORM</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -191,9 +207,19 @@ export default function ServicesPage() {
               Custom &amp; Private Group Expeditions
             </h2>
             <p className="text-[#C5CEC8] text-xs sm:text-sm font-light leading-relaxed">
-              Planning a trip for your corporate team, family, or close friends to Assam, Meghalaya, Lakshadweep, or Arunachal Pradesh? Amal &amp; Jeena curate customized itineraries tailored to your exact travel preferences.
+              Planning a trip for your corporate team, family, or close friends? Amal &amp; Jeena curate customized itineraries tailored to your exact travel preferences.
             </p>
-            <div className="pt-2">
+            <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="https://wa.me/916282603784?text=Hi%20Path%20of%20Stories,%20I'd%20like%20to%20request%20a%20custom%20itinerary!"
+                target="_blank"
+                rel="noreferrer"
+                className="bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-semibold uppercase tracking-wider px-8 py-3.5 rounded-full shadow-md inline-flex items-center gap-2 transition-all"
+              >
+                <MessageCircle className="w-4 h-4 fill-current" />
+                <span>CHAT ON WHATSAPP</span>
+              </a>
+
               <Link
                 href="/contact"
                 className="bg-[#AD6B4D] hover:bg-[#9E5D3B] text-[#FAF8F5] text-xs font-semibold uppercase tracking-wider px-8 py-3.5 rounded-full shadow-md inline-flex items-center gap-2 transition-all"

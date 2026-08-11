@@ -3,6 +3,7 @@ import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "@/styles/globals.css";
 import { Navbar } from "@/components/navigation/Navbar";
 import { Footer } from "@/components/footer/Footer";
+import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair-display",
@@ -20,14 +21,19 @@ const sans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "PATH OF STORIES | Every Journey Tells a Story",
   description:
-    "Kerala's experience-based travel community. Authentic small-group wilderness journeys, curated treks, responsible travel and memories that last.",
+    "Kerala & Northeast India experience-based travel community. Authentic small-group wilderness journeys, Arunachal Pradesh, Meghalaya, Assam, Nagaland & Lakshadweep.",
   keywords: [
     "Path of Stories",
-    "Kerala Travel Community",
-    "Experience Based Travel",
-    "Kudremukh Trek",
-    "Wayanad Escape",
-    "Varkala Getaway",
+    "Arunachal Pradesh Monasteries",
+    "Tawang Monastery",
+    "Hornbill Festival Nagaland",
+    "Dzoku Valley Trek",
+    "Kaziranga Assam",
+    "Meghalaya Waterfalls",
+    "Wari Chora",
+    "Anini Mechuka",
+    "Ziro Apatani",
+    "Dong Valley First Sunrise",
   ],
 };
 
@@ -42,8 +48,8 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1 relative z-10">{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
 }
-
