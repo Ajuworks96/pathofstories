@@ -136,7 +136,7 @@ export function OurServicesSection() {
               key={item.id}
               className="bg-[#EFECE6] border border-[#E2DEC5] hover:border-[#AD6B4D]/60 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group flex flex-col justify-between"
             >
-              <div>
+              <div className="flex flex-col flex-1">
                 {/* Image Banner */}
                 <div
                   onClick={() => setSelectedService(item)}
@@ -167,21 +167,23 @@ export function OurServicesSection() {
                   </div>
                 </div>
 
-                {/* Card Details */}
-                <div className="p-6 space-y-3">
-                  <h3
-                    onClick={() => setSelectedService(item)}
-                    className="text-xl font-serif font-semibold text-[#213327] leading-snug group-hover:text-[#AD6B4D] transition-colors cursor-pointer"
-                  >
-                    {item.title}
-                  </h3>
+                {/* Card Details Body */}
+                <div className="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                  <div className="space-y-2">
+                    <h3
+                      onClick={() => setSelectedService(item)}
+                      className="text-xl font-serif font-semibold text-[#213327] leading-snug group-hover:text-[#AD6B4D] transition-colors cursor-pointer"
+                    >
+                      {item.title}
+                    </h3>
 
-                  <p className="text-xs text-[#4A554D] leading-relaxed font-light">
-                    {item.description}
-                  </p>
+                    <p className="text-xs text-[#4A554D] leading-relaxed font-light">
+                      {item.description}
+                    </p>
+                  </div>
 
                   {/* Highlights Tags */}
-                  <div className="pt-2">
+                  <div className="pt-3">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-[#78857A] block mb-2 flex items-center gap-1">
                       <Sparkles className="w-3 h-3 text-[#AD6B4D]" />
                       EXPED HIGHLIGHTS:
@@ -200,11 +202,11 @@ export function OurServicesSection() {
                 </div>
               </div>
 
-              {/* Card Footer with Direct WhatsApp Button */}
-              <div className="p-6 pt-0 mt-4 border-t border-[#D9D4C7]/60 flex items-center justify-between gap-3">
+              {/* Card Footer perfectly aligned vertically with equal padding top and bottom */}
+              <div className="px-6 py-4 border-t border-[#D9D4C7]/70 flex items-center justify-between gap-3 mt-auto bg-[#EAE6DE]/40">
                 <button
                   onClick={() => setSelectedService(item)}
-                  className="text-xs font-semibold text-[#213327] hover:text-[#AD6B4D] flex items-center gap-1 transition-colors"
+                  className="text-xs font-semibold text-[#213327] hover:text-[#AD6B4D] flex items-center gap-1.5 transition-colors py-1"
                 >
                   <span>Details</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -214,7 +216,7 @@ export function OurServicesSection() {
                   href={getWhatsAppUrl(item.title)}
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-[#25D366] hover:bg-[#20bd5a] text-white text-[11px] font-bold uppercase tracking-wider px-4 py-2 rounded-full flex items-center gap-1.5 transition-all shadow-sm hover:shadow-md"
+                  className="bg-[#25D366] hover:bg-[#20bd5a] text-white text-[11px] font-bold uppercase tracking-wider px-4 py-2 rounded-full flex items-center gap-1.5 transition-all shadow-xs hover:shadow-md"
                 >
                   <MessageCircle className="w-3.5 h-3.5 fill-current" />
                   <span>WhatsApp</span>

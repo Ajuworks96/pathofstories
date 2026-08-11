@@ -119,7 +119,7 @@ export default function ServicesPage() {
               key={item.id}
               className="bg-[#EFECE6] border border-[#E2DEC5] hover:border-[#AD6B4D]/50 rounded-3xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 group flex flex-col justify-between"
             >
-              <div>
+              <div className="flex flex-col flex-1">
                 <div className="relative h-64 sm:h-72 w-full">
                   <Image
                     src={item.image}
@@ -144,14 +144,16 @@ export default function ServicesPage() {
                   </div>
                 </div>
 
-                <div className="p-6 sm:p-8 space-y-4">
-                  <h3 className="text-2xl font-bold font-serif text-[#213327]">
-                    {item.title}
-                  </h3>
+                <div className="p-6 sm:p-8 space-y-4 flex-1 flex flex-col justify-between">
+                  <div className="space-y-3">
+                    <h3 className="text-2xl font-bold font-serif text-[#213327]">
+                      {item.title}
+                    </h3>
 
-                  <p className="text-xs sm:text-sm text-[#4A554D] leading-relaxed font-light">
-                    {item.description}
-                  </p>
+                    <p className="text-xs sm:text-sm text-[#4A554D] leading-relaxed font-light">
+                      {item.description}
+                    </p>
+                  </div>
 
                   <div className="pt-2">
                     <span className="text-[11px] font-bold uppercase tracking-wider text-[#78857A] block mb-2 flex items-center gap-1">
@@ -172,12 +174,12 @@ export default function ServicesPage() {
                 </div>
               </div>
 
-              <div className="p-6 sm:p-8 pt-0 flex flex-col sm:flex-row gap-3">
+              <div className="px-6 py-4 border-t border-[#D9D4C7]/70 flex flex-col sm:flex-row items-center gap-3 mt-auto bg-[#EAE6DE]/40">
                 <a
                   href={getWhatsAppUrl(item.title)}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex-1 bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl shadow-md transition flex items-center justify-center gap-2"
+                  className="flex-1 w-full bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl shadow-md transition flex items-center justify-center gap-2"
                 >
                   <MessageCircle className="w-4 h-4 fill-current" />
                   <span>INQUIRE ON WHATSAPP</span>
@@ -185,7 +187,7 @@ export default function ServicesPage() {
 
                 <Link
                   href="/contact"
-                  className="bg-[#213327] hover:bg-[#2C4233] text-[#FAF8F5] text-xs font-semibold uppercase tracking-wider px-6 py-3.5 rounded-xl shadow-md transition flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto bg-[#213327] hover:bg-[#2C4233] text-[#FAF8F5] text-xs font-semibold uppercase tracking-wider px-6 py-3.5 rounded-xl shadow-md transition flex items-center justify-center gap-2"
                 >
                   <span>FORM</span>
                   <ArrowRight className="w-4 h-4" />
