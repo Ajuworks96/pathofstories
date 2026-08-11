@@ -15,7 +15,6 @@ export default function ServicesPage() {
       title: "Western Ghats Monsoon Fort Trail",
       location: "Sahyadri, Maharashtra",
       duration: "4 Days / 3 Nights",
-      price: "₹8,999",
       image: "/images/trip_maharashtra.jpg",
       description: "Misty fort ridge walks, ancient fortresses, waterfall showers, and acoustic campfire sessions with fellow conscious travelers.",
       highlights: ["Misty Fortress Ridges", "Campfire Acoustic Sessions", "Waterfall Trekking", "Local Homestay Dining"],
@@ -25,7 +24,6 @@ export default function ServicesPage() {
       title: "Living Root Bridges & Cherrapunji",
       location: "Rainforest, Meghalaya",
       duration: "6 Days / 5 Nights",
-      price: "₹14,500",
       image: "/images/trip_meghalaya.jpg",
       description: "Hike through double-decker living root bridges, turquoise natural pools, and fog-draped rainiest valleys on earth.",
       highlights: ["Double-Decker Root Bridges", "Dawki River Boating", "Nohkalikai Waterfalls", "Khasi Village Stays"],
@@ -35,7 +33,6 @@ export default function ServicesPage() {
       title: "Spiti Monastery & Milky Way Stargazing",
       location: "Spiti Valley, Himachal",
       duration: "8 Days / 7 Nights",
-      price: "₹21,000",
       image: "/images/trip_spiti.jpg",
       description: "High-altitude desert mountain sanctuary, morning chants at Key Gompa, and crystal-clear Milky Way night sky stargazing.",
       highlights: ["Key Gompa Monastery Chants", "Chandratal Lake Camping", "Milky Way Astrophotography", "Highest Post Office Visit"],
@@ -45,7 +42,6 @@ export default function ServicesPage() {
       title: "Kerala Tea Highlands & Backwater Stays",
       location: "Munnar & Alleppey, Kerala",
       duration: "5 Days / 4 Nights",
-      price: "₹11,500",
       image: "/images/trip_kerala.jpg",
       description: "Private tea plantation morning walks, traditional houseboat slow cruising, and authentic Ayurvedic spice culinary experiences.",
       highlights: ["Tea Plantation Ridge Sunrise", "Alleppey Houseboat Slow Cruise", "Local Spice Garden Tours", "Traditional Kathakali Evening"],
@@ -55,7 +51,6 @@ export default function ServicesPage() {
       title: "Himalayan Ridge & Monastery Trek",
       location: "Annapurna Region, Nepal",
       duration: "9 Days / 8 Nights",
-      price: "₹28,500",
       image: "/images/trip_nepal.jpg",
       description: "Iconic Himalayan snow peak panoramas, ancient mountain tea houses, and slow mindful high-altitude trekking.",
       highlights: ["Annapurna Panorama Views", "Sherpa Tea House Hospitality", "High Altitude Sacred Lakes", "Kathmandu Cultural Tour"],
@@ -79,7 +74,7 @@ export default function ServicesPage() {
         <div className="w-12 h-[2px] bg-[#78857A] mx-auto mt-2" />
 
         <p className="text-[#4A554D] text-sm sm:text-base font-light max-w-2xl mx-auto leading-relaxed pt-2">
-          From weekend monsoon ridge walks to 8-day Himalayan stargazing retreats. Every expedition is thoughtfully planned with safety, transparency, and high value.
+          From weekend monsoon ridge walks to 8-day Himalayan stargazing retreats. Every expedition is thoughtfully planned with care, safety, and authenticity.
         </p>
       </div>
 
@@ -101,12 +96,9 @@ export default function ServicesPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#213327] via-transparent to-transparent" />
                   
-                  <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
+                  <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 rounded-full bg-[#FAF8F5]/90 text-[#213327] text-[10px] font-bold uppercase tracking-wider border border-[#DCD7CD]">
                       {item.duration}
-                    </span>
-                    <span className="px-3.5 py-1 rounded-full bg-[#213327] text-[#FAF8F5] text-xs font-semibold uppercase tracking-wider shadow-md">
-                      {item.price}
                     </span>
                   </div>
 
@@ -150,7 +142,7 @@ export default function ServicesPage() {
                   href="/contact"
                   className="w-full bg-[#213327] hover:bg-[#2C4233] text-[#FAF8F5] text-xs font-semibold uppercase tracking-wider py-3.5 rounded-xl shadow-md transition flex items-center justify-center gap-2"
                 >
-                  <span>BOOK THIS EXPEDITION</span>
+                  <span>INQUIRE ABOUT THIS EXPEDITION</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -166,7 +158,7 @@ export default function ServicesPage() {
             Custom &amp; Private Group Expeditions
           </h2>
           <p className="text-[#C5CEC8] text-xs sm:text-sm max-w-2xl mx-auto font-light leading-relaxed">
-            Planning a trip for your corporate team, family, or close friends? Amal &amp; Jeena curate customized itineraries tailored to your budget and travel preferences.
+            Planning a trip for your corporate team, family, or close friends? Amal &amp; Jeena curate customized itineraries tailored to your travel preferences.
           </p>
           <Link
             href="/contact"

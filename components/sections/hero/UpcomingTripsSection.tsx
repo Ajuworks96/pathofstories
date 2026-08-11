@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, X, Check } from "lucide-react";
 
-
 export interface TripCard {
   id: string;
   title: string;
@@ -13,7 +12,6 @@ export interface TripCard {
   difficulty: string;
   image: string;
   location: string;
-  price: string;
   description: string;
 }
 
@@ -29,7 +27,6 @@ export function UpcomingTripsSection() {
       difficulty: "Moderate",
       image: "/images/kudremukh_trek.png",
       location: "Chikkamagaluru, Karnataka",
-      price: "₹4,999",
       description: "Trek through the rolling green horse-face peak, lush shola forests, and pristine mist-shrouded mountain streams.",
     },
     {
@@ -39,7 +36,6 @@ export function UpcomingTripsSection() {
       difficulty: "Easy",
       image: "/images/wayanad_escape.png",
       location: "Wayanad, Kerala",
-      price: "₹3,499",
       description: "Experience forest camping under glowing lanterns, pine trees, natural water stream dips, and campfire acoustic sessions.",
     },
     {
@@ -49,7 +45,6 @@ export function UpcomingTripsSection() {
       difficulty: "Easy",
       image: "/images/varkala_getaway.png",
       location: "Varkala Cliff, Kerala",
-      price: "₹3,999",
       description: "Sunset beach cliff walks, serene ocean views, seaside cafes, and relaxed coastal vibes along Kerala's iconic red cliffs.",
     },
   ];
@@ -152,9 +147,6 @@ export function UpcomingTripsSection() {
                 <span className="font-medium text-[#78857A]">
                   Difficulty: {selectedTrip.difficulty}
                 </span>
-                <span className="font-bold text-[#AD6B4D] text-base">
-                  {selectedTrip.price}
-                </span>
               </div>
 
               <p className="text-xs sm:text-sm text-[#4A554D] leading-relaxed">
@@ -174,7 +166,7 @@ export function UpcomingTripsSection() {
                   onClick={() => setBookingSuccess(true)}
                   className="w-full bg-[#213327] hover:bg-[#2C4233] text-[#FAF8F5] font-semibold text-xs uppercase tracking-wider py-3 rounded-full transition-all shadow-md"
                 >
-                  Reserve Seat For {selectedTrip.price}
+                  Reserve Seat / Request Itinerary
                 </button>
               )}
             </div>
@@ -184,4 +176,3 @@ export function UpcomingTripsSection() {
     </section>
   );
 }
-
