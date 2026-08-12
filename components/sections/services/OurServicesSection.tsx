@@ -18,6 +18,72 @@ export interface DestinationService {
 
 export const servicesData: DestinationService[] = [
   {
+    id: "meghalaya",
+    title: "Meghalaya - Land of Water Activities",
+    location: "Cherrapunji, Jaintia & Khasi Hills",
+    tagline: "Waterfalls, canyons, Dawki river & Wari Chora",
+    description:
+      "Explore mist-laden Cherrapunji, serene Jaintia & Khasi hills, glass-like Dawki river, and the natural water canyon of Wari Chora.",
+    image: "/images/service_meghalaya.jpg",
+    duration: "6 Days / 5 Nights",
+    highlights: [
+      "Cherrapunji",
+      "Jaintia Hills",
+      "Khasi hills",
+      "Dawki river",
+      "Wari Chora",
+      "Land of water activities",
+    ],
+  },
+  {
+    id: "assam",
+    title: "One Horned Rhinos and Assam",
+    location: "Assam, Northeast India",
+    tagline: "Kaziranga wildlife & the mighty Brahmaputra river",
+    description:
+      "Explore Kaziranga National Park sanctuary of one-horned rhinoceroses, tea plantations, and scenic cruises along the mighty Brahmaputra.",
+    image: "/images/service_assam.jpg",
+    duration: "5 Days / 4 Nights",
+    highlights: [
+      "Kaziranga Wild life",
+      "The mighty Brahmaputra",
+      "Majuli Island Culture",
+      "Heritage Tea Estates",
+    ],
+  },
+  {
+    id: "lakshadweep",
+    title: "Lakshadweep Coral Islands",
+    location: "Lakshadweep Islands",
+    tagline: "Turquoise lagoons, coral reefs & coconut groves",
+    description:
+      "Escape to untouched tropical islands, azure lagoons, vibrant coral reefs, and tranquil beach retreats in Lakshadweep.",
+    image: "/images/service_lakshadweep.jpg",
+    duration: "5 Days / 4 Nights",
+    highlights: [
+      "Agatti Island",
+      "Bangaram Atoll",
+      "Scuba & Snorkeling",
+      "Coral Reefs",
+      "Water Sports",
+    ],
+  },
+  {
+    id: "nagaland",
+    title: "Hornbill Festival and Nagaland",
+    location: "Nagaland, Northeast India",
+    tagline: "Dzoku valley trek & Land of Head Hunters",
+    description:
+      "Trek through the emerald waves of Dzoku Valley, immerse in the world-famous Hornbill Festival, and visit historic Longwa tribal hamlets.",
+    image: "/images/service_nagaland.jpg",
+    duration: "6 Days / 5 Nights",
+    highlights: [
+      "Dzoku valley trek",
+      "Hornbill Festival",
+      "Longwa (Land of head hunters)",
+    ],
+  },
+  {
     id: "arunachal_pradesh",
     title: "Land of Monasteries and Waterfalls - Arunachal Pradesh",
     location: "Arunachal Pradesh",
@@ -49,71 +115,6 @@ export const servicesData: DestinationService[] = [
       "Mechuka Valley",
       "Ziro (Land of Apatani Tribe)",
       "Dong Valley (First Sunrise in India)",
-    ],
-  },
-  {
-    id: "assam",
-    title: "One Horned Rhinos and Assam",
-    location: "Assam, Northeast India",
-    tagline: "Kaziranga wildlife & the mighty Brahmaputra river",
-    description:
-      "Explore Kaziranga National Park sanctuary of one-horned rhinoceroses, tea plantations, and scenic cruises along the mighty Brahmaputra.",
-    image: "/images/service_assam.jpg",
-    duration: "5 Days / 4 Nights",
-    highlights: [
-      "Kaziranga Wild life",
-      "The mighty Brahmaputra",
-      "Majuli Island Culture",
-      "Heritage Tea Estates",
-    ],
-  },
-  {
-    id: "nagaland",
-    title: "Hornbill Festival and Nagaland",
-    location: "Nagaland, Northeast India",
-    tagline: "Dzoku valley trek & Land of Head Hunters",
-    description:
-      "Trek through the emerald waves of Dzoku Valley, immerse in the world-famous Hornbill Festival, and visit historic Longwa tribal hamlets.",
-    image: "/images/service_nagaland.jpg",
-    duration: "6 Days / 5 Nights",
-    highlights: [
-      "Dzoku valley trek",
-      "Hornbill Festival",
-      "Longwa (Land of head hunters)",
-    ],
-  },
-  {
-    id: "meghalaya",
-    title: "Meghalaya - Land of Water Activities",
-    location: "Cherrapunji, Jaintia & Khasi Hills",
-    tagline: "Waterfalls, canyons, Dawki river & Wari Chora",
-    description:
-      "Explore mist-laden Cherrapunji, serene Jaintia & Khasi hills, glass-like Dawki river, and the natural water canyon of Wari Chora.",
-    image: "/images/service_meghalaya.jpg",
-    duration: "6 Days / 5 Nights",
-    highlights: [
-      "Cherrapunji",
-      "Jaintia Hills",
-      "Khasi hills",
-      "Dawki river",
-      "Wari Chora",
-      "Land of water activities",
-    ],
-  },
-  {
-    id: "lakshadweep",
-    title: "Lakshadweep Tropical Island Getaway",
-    location: "Lakshadweep Archipelago, India",
-    tagline: "Turquoise lagoons, coral reefs & coconut groves",
-    description:
-      "Escape to pristine island coral atolls, crystal turquoise lagoons, scuba diving, and tranquil coconut beach retreats.",
-    image: "/images/service_lakshadweep.jpg",
-    duration: "5 Days / 4 Nights",
-    highlights: [
-      "Agatti & Bangaram Atolls",
-      "Scuba Diving & Coral Reefs",
-      "Kayaking & Lagoon Snorkeling",
-      "Tropical Island Sunset Cruise",
     ],
   },
 ];

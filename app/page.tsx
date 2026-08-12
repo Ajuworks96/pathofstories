@@ -1,7 +1,6 @@
 import React from "react";
 import { HeroSection } from "@/components/sections/hero/HeroSection";
 import { FeaturePillarsBar } from "@/components/sections/features/FeaturePillarsBar";
-import { UpcomingTripsSection } from "@/components/sections/hero/UpcomingTripsSection";
 import { OurServicesSection } from "@/components/sections/services/OurServicesSection";
 import { MissionVisionSection } from "@/components/sections/mission/MissionVisionSection";
 import { AboutSection } from "@/components/sections/about/AboutSection";
@@ -19,10 +18,7 @@ export default function HomePage() {
         <FeaturePillarsBar />
       </div>
 
-      {/* 3. Featured Trips Section */}
-      <UpcomingTripsSection />
-
-      {/* 4. Our Services & Destinations Section (Assam, Meghalaya, Tawang, Nagaland, Arunachal Pradesh, Anini, Mechuka, Lakshadweep) */}
+      {/* 3. Our Services & Destinations Section (Assam, Meghalaya, Tawang, Nagaland, Arunachal Pradesh, Anini, Mechuka, Lakshadweep) */}
       <OurServicesSection />
 
       {/* 5. Mission & Vision Section */}
