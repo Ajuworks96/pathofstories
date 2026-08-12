@@ -83,6 +83,20 @@ export default function ServicesPage() {
         "Land of water activities",
       ],
     },
+    {
+      id: "lakshadweep",
+      title: "Lakshadweep Tropical Island Getaway",
+      location: "Lakshadweep Archipelago, India",
+      duration: "5 Days / 4 Nights",
+      image: "/images/service_lakshadweep.jpg",
+      description: "Escape to pristine island coral atolls, crystal turquoise lagoons, scuba diving, and tranquil coconut beach retreats.",
+      highlights: [
+        "Agatti & Bangaram Atolls",
+        "Scuba Diving & Coral Reefs",
+        "Kayaking & Lagoon Snorkeling",
+        "Tropical Island Sunset Cruise",
+      ],
+    },
   ];
 
   const getWhatsAppUrl = (title: string) => {

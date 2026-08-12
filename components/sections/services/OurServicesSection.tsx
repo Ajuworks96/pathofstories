@@ -100,6 +100,22 @@ export const servicesData: DestinationService[] = [
       "Land of water activities",
     ],
   },
+  {
+    id: "lakshadweep",
+    title: "Lakshadweep Tropical Island Getaway",
+    location: "Lakshadweep Archipelago, India",
+    tagline: "Turquoise lagoons, coral reefs & coconut groves",
+    description:
+      "Escape to pristine island coral atolls, crystal turquoise lagoons, scuba diving, and tranquil coconut beach retreats.",
+    image: "/images/service_lakshadweep.jpg",
+    duration: "5 Days / 4 Nights",
+    highlights: [
+      "Agatti & Bangaram Atolls",
+      "Scuba Diving & Coral Reefs",
+      "Kayaking & Lagoon Snorkeling",
+      "Tropical Island Sunset Cruise",
+    ],
+  },
 ];
 
 export function OurServicesSection() {
