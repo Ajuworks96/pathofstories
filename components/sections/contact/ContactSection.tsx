@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Send, CheckCircle2 } from "lucide-react";
+import { Mail, Phone, MapPin, Send, CheckCircle2, Loader2 } from "lucide-react";
 
 export function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -13,9 +14,50 @@ export function ContactSection() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+
+    try {
+      // Send inquiry to pathofstoriess@gmail.com via FormSubmit AJAX
+      const res = await fetch("https://formsubmit.co/ajax/pathofstoriess@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `New Trip Inquiry: ${formData.destination} (${formData.name})`,
+          Name: formData.name,
+          Email: formData.email,
+          Phone: formData.phone,
+          "Trip Selected": formData.destination,
+          Message: formData.message || "No additional message provided.",
+        }),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        // Fallback open mailto client to pathofstoriess@gmail.com
+        window.location.href = `mailto:pathofstoriess@gmail.com?subject=${encodeURIComponent(
+          `New Expedition Inquiry: ${formData.destination}`
+        )}&body=${encodeURIComponent(
+          `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nSelected Trip: ${formData.destination}\nMessage: ${formData.message}`
+        )}`;
+        setSubmitted(true);
+      }
+    } catch {
+      // Fallback open mailto client
+      window.location.href = `mailto:pathofstoriess@gmail.com?subject=${encodeURIComponent(
+        `New Expedition Inquiry: ${formData.destination}`
+      )}&body=${encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nSelected Trip: ${formData.destination}\nMessage: ${formData.message}`
+      )}`;
+      setSubmitted(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -191,10 +233,20 @@ export function ContactSection() {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#213327] hover:bg-[#2C4233] text-[#FAF8F5] font-semibold py-3.5 rounded-full uppercase tracking-wider text-xs shadow-md transition flex items-center justify-center gap-2"
+                  disabled={loading}
+                  className="w-full bg-[#213327] hover:bg-[#2C4233] text-[#FAF8F5] font-semibold py-3.5 rounded-full uppercase tracking-wider text-xs shadow-md transition flex items-center justify-center gap-2 disabled:opacity-60"
                 >
-                  <span>Submit Inquiry</span>
-                  <Send className="w-4 h-4" />
+                  {loading ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      <span>Sending Inquiry to Email...</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>Submit Inquiry</span>
+                      <Send className="w-4 h-4" />
+                    </>
+                  )}
                 </button>
               </form>
             )}
