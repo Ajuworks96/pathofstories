@@ -87,10 +87,13 @@ export const ContactForm: React.FC = () => {
                 className="w-full bg-surface border border-border px-4 py-3 rounded-md text-sm text-text-primary focus:outline-none focus:ring-2 focus:ring-primary-800"
               >
                 <option value="general">General Inquiry</option>
-                <option value="silent-ridge">Silent Ridge: High Himalayan Traverse</option>
-                <option value="nordic-fjords">Nordic Fjords & Aurora Solitude</option>
-                <option value="canopy-forest">Canopy & Cloud Forest Secret Trails</option>
-                <option value="custom">Custom Private Story Journey</option>
+                <option value="meghalaya">Meghalaya - Land of Water Activities</option>
+                <option value="assam">One Horned Rhinos and Assam</option>
+                <option value="lakshadweep">Lakshadweep Coral Islands</option>
+                <option value="nagaland">Hornbill Festival and Nagaland</option>
+                <option value="arunachal">Land of Monasteries and Waterfalls - Arunachal Pradesh</option>
+                <option value="anini_mechuka_ziro">Anini, Mechuka & Ziro Valley</option>
+                <option value="custom">Custom Private Group Journey</option>
               </select>
             </div>
           </div>

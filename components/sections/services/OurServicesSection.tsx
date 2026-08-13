@@ -168,13 +168,6 @@ export function OurServicesSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#213327]/85 via-transparent to-transparent" />
                   
-                  {/* Top Pill */}
-                  <div className="absolute top-3 left-3">
-                    <span className="px-2.5 py-1 rounded-full bg-[#FAF8F5]/90 text-[#213327] text-[10px] font-bold uppercase tracking-wider border border-[#DCD7CD] backdrop-blur-xs">
-                      {item.duration}
-                    </span>
-                  </div>
-
                   {/* Bottom Location */}
                   <div className="absolute bottom-3 left-3 right-3 text-white">
                     <div className="flex items-center gap-1 text-[11px] text-[#FAF8F5] uppercase font-medium">

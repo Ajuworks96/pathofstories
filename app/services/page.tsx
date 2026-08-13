@@ -144,12 +144,6 @@ export default function ServicesPage() {
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#213327] via-transparent to-transparent" />
-                  
-                  <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 rounded-full bg-[#FAF8F5]/90 text-[#213327] text-[10px] font-bold uppercase tracking-wider border border-[#DCD7CD]">
-                      {item.duration}
-                    </span>
-                  </div>
 
                   <div className="absolute bottom-4 left-4 text-white">
                     <div className="flex items-center gap-1.5 text-xs text-[#FAF8F5] uppercase font-medium">

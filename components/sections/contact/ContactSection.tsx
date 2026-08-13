@@ -9,7 +9,7 @@ export function ContactSection() {
     name: "",
     email: "",
     phone: "",
-    destination: "Kudremukh Trek",
+    destination: "Meghalaya - Land of Water Activities",
     message: "",
   });
 
@@ -166,10 +166,13 @@ export function ContactSection() {
                     onChange={(e) => setFormData({ ...formData, destination: e.target.value })}
                     className="w-full bg-[#FAF8F5] border border-[#DCD7CD] rounded-xl px-4 py-3 text-xs text-[#213327] focus:outline-none focus:border-[#213327]"
                   >
-                    <option value="Kudremukh Trek">Kudremukh Trek (3 Days)</option>
-                    <option value="Wayanad Escape">Wayanad Escape (2 Days)</option>
-                    <option value="Varkala Getaway">Varkala Getaway (2 Days)</option>
-                    <option value="Custom Group">Custom Group / Corporate Retreat</option>
+                    <option value="Meghalaya - Land of Water Activities">Meghalaya - Land of Water Activities</option>
+                    <option value="One Horned Rhinos and Assam">One Horned Rhinos and Assam</option>
+                    <option value="Lakshadweep Coral Islands">Lakshadweep Coral Islands</option>
+                    <option value="Hornbill Festival and Nagaland">Hornbill Festival and Nagaland</option>
+                    <option value="Land of Monasteries and Waterfalls - Arunachal Pradesh">Land of Monasteries and Waterfalls - Arunachal Pradesh</option>
+                    <option value="Anini, Mechuka & Ziro Valley">Anini, Mechuka & Ziro Valley</option>
+                    <option value="Custom Group / Bespoke Expedition">Custom Group / Bespoke Expedition</option>
                   </select>
                 </div>
 
